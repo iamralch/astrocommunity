@@ -11,13 +11,7 @@ return {
     {
       "AstroNvim/astrocore",
       opts = function(_, opts)
-        opts.cli = {
-          mux = {
-            enabled = true,
-          },
-        }
-
-        local maps = opts.mappings
+        local maps = assert(opts.mappings)
 
         maps.n[prefix] = { desc = require("astroui").get_icon("SidekickNvim", 1, true) .. "Sidekick" }
         maps.n[prefix .. "a"] = {
