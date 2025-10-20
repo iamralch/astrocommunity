@@ -45,15 +45,15 @@ return {
           desc = "Select Prompt",
         }
 
-        maps.x[prefix .. "t"] = {
+        maps.v[prefix .. "t"] = {
           function() require("sidekick.cli").send { msg = "{this}" } end,
           desc = "Send This",
         }
-        maps.x[prefix .. "v"] = {
+        maps.v[prefix .. "v"] = {
           function() require("sidekick.cli").send { msg = "{selection}" } end,
           desc = "Send Visual Selection",
         }
-        maps.x[prefix .. "p"] = {
+        maps.v[prefix .. "p"] = {
           function() require("sidekick.cli").prompt() end,
           desc = "Select Prompt",
         }
