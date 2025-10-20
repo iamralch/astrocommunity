@@ -2,6 +2,9 @@ local prefix = "<Leader>K"
 
 return {
   "folke/sidekick.nvim",
+  dependencies = {
+    { import = "astrocommunity.completion.copilot-lua" },
+  },
   specs = {
     {
       "AstroNvim/astroui",
